@@ -1,215 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>Hello World! My first blog! | Hao&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="当当当当！">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World! My first blog!">
-<meta property="og:url" content="http://example.com/2022/07/28/Hello-World-My-first-blog/index.html">
-<meta property="og:site_name" content="Hao&#39;s Blog">
-<meta property="og:description" content="当当当当！">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-07-28T15:29:40.000Z">
-<meta property="article:modified_time" content="2022-07-29T02:54:07.231Z">
-<meta property="article:author" content="Hao_ooo">
-<meta property="article:tag" content="test">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hao&#39;s Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-<meta name="generator" content="Hexo 5.4.2"></head>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello World! My first blog! — Hao</title>
+<meta name="description" content="Hello World! My first blog!">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%23a855f7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --bg:#0a0a12; --card:rgba(255,255,255,.04); --border:rgba(255,255,255,.09);
+  --text:#f2f3f8; --dim:#9a9db1; --faint:#63667d;
+  --a1:#6366f1; --a2:#a855f7;
+  --font:"SF Pro Display","Inter",-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  --mono:"SF Mono","JetBrains Mono",Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.8;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(99,102,241,.35);color:#fff}
+.bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(60rem 40rem at 15% -10%,rgba(99,102,241,.14),transparent 60%),radial-gradient(50rem 35rem at 85% 10%,rgba(168,85,247,.10),transparent 60%),var(--bg)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);background:rgba(10,10,18,.55);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:760px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-weight:700;font-size:17px;background:linear-gradient(120deg,#38bdf8,var(--a1) 55%,var(--a2));-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:14px;transition:color .3s}
+.nav-links a:hover{color:var(--text)}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+article{padding:140px 0 100px}
+.post-title{font-size:clamp(28px,4.5vw,40px);font-weight:800;letter-spacing:-.03em;line-height:1.25}
+.post-meta{display:flex;gap:16px;margin:18px 0 40px;font-family:var(--mono);font-size:13px;color:var(--faint)}
+.post-body{color:#d7d9e6;font-size:16px}
+.post-body p{margin-bottom:1.4em}
+.back{display:inline-flex;align-items:center;gap:8px;color:var(--dim);text-decoration:none;font-size:14px;transition:color .3s}
+.back:hover{color:var(--text)}
+.back:hover .arr{transform:translateX(-3px)}
+.arr{transition:transform .3s}
+footer{border-top:1px solid var(--border);padding:36px 0 50px;color:var(--faint);font-size:13.5px}
+.foot{max-width:760px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.foot a{color:var(--dim);text-decoration:none}
+.foot a:hover{color:var(--text)}
+</style>
+</head>
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hao&#39;s Blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
+<div class="bg"></div>
+<nav class="nav"><div class="nav-inner">
+  <a class="nav-logo" href="/">Hao</a>
+  <div class="nav-links"><a href="/#projects">项目</a><a href="/#blog">博客</a></div>
+</div></nav>
+<article class="wrap">
+  <a class="back" href="/#blog"><span class="arr">←</span> 返回主页</a>
+  <h1 class="post-title">Hello World! My first blog!</h1>
+  <div class="post-meta"><span>2022.07.28</span><span>tag: test</span></div>
+  <div class="post-body">
+    <p>当当当当！</p>
+    <p>这是我在 GitHub Pages 上搭建的第一篇博客。从今天开始，用文字记录学习与生活的点滴。</p>
+    <p>搭建博客的尝试，从这里启程。</p>
   </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-Hello-World-My-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/07/28/Hello-World-My-first-blog/" class="article-date">
-  <time datetime="2022-07-28T15:29:40.000Z" itemprop="datePublished">2022-07-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World! My first blog!
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>当当当当！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/07/28/Hello-World-My-first-blog/" data-id="cl6bikce40000dsvzdadxfrtf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2022/07/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
-  
 </article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/test/" style="font-size: 10px;">test</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/07/28/Hello-World-My-first-blog/">Hello World! My first blog!</a>
-          </li>
-        
-          <li>
-            <a href="/2022/07/28/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 Hao_ooo<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
+<footer><div class="foot">
+  <span>© 2022–2026 Hao</span>
+  <a href="/">← 回到主页</a>
+</div></footer>
 </body>
 </html>
